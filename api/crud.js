@@ -10,14 +10,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const bookSchema = new mongoose.Schema({
+const BookSchema = new mongoose.Schema({
   Book_title: String,
   author: String,
   publish_date: Date,
   description: String,
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const Book = mongoose.model("Book", BookSchema);
 
 app.get("/api/books", async (req, res) => {
   try {
