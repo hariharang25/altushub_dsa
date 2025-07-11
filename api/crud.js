@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const PORT = 4344;
-const MONGODB_URI = "mongodb://localhost:27017/altiushub";
+const PORT = 5000;
+const MONGODB_URI = "mongodb://localhost:27017/books";
 
 app.use(cors());
 app.use(express.json());
